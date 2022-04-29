@@ -156,6 +156,7 @@ func (timeline *timeline) parseTweet(id string) *Tweet {
 	if tweet, ok := timeline.GlobalObjects.Tweets[id]; ok {
 		username := timeline.GlobalObjects.Users[tweet.UserIDStr].ScreenName
 		tw := &Tweet{
+			CreatedAt:    tweet.CreatedAt,
 			ID:           id,
 			Likes:        tweet.FavoriteCount,
 			PermanentURL: fmt.Sprintf("https://twitter.com/%s/status/%s", username, id),
