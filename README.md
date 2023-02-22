@@ -1,4 +1,4 @@
-# Twitter Scraper
+# Twitter Scraper Test
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/n0madic/twitter-scraper.svg)](https://pkg.go.dev/github.com/n0madic/twitter-scraper)
 
